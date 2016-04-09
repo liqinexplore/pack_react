@@ -4,7 +4,7 @@ import {Menu,Icon} from 'antd';
 import '../node_modules/antd/lib/index.css';
 const SubMenu =Menu.SubMenu;
 const MenuItemGroup=Menu.ItemGroup;
-import menu_list from 'meun.js';
+
 
 
 const Sider = React.createClass({
@@ -19,14 +19,8 @@ const Sider = React.createClass({
             current: e.key
         });
     },
-    getDefaultProps:function(){
-      return{
-          menu_list:[]
-      }
-    },
     render() {
         return (
-
             <Menu onClick={this.handleClick}
                   style={{ width: 240 }}
                   defaultOpenKeys={['sub1']}
